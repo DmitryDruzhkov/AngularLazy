@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@angular-lazy/address/feature": ["libs/address/feature/src/index.ts"],
       "@angular-lazy/auth/feature": ["libs/auth/feature/src/index.ts"],
       "@angular-lazy/layout/header": ["libs/layout/header/src/index.ts"],
       "@angular-lazy/shared": ["libs/shared/src/index.ts"]

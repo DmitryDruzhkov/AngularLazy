@@ -1,4 +1,8 @@
 <button (click)="onAuth()" mat-raised-button>Авторизоваться</button>
+<button (click)="onAddAddress()" mat-raised-button>Задать город</button>
 <button (click)="onCancel()" mat-raised-button>Отмена</button>
 
-<ng-template DynamicComponent [componentLoader]="authComponent | async"></ng-template>
+<ng-template DynamicComponent [componentLoader]="authComponent$ | async"></ng-template>
+<ng-template DynamicComponent [componentLoader]="addressComponent$ | async"></ng-template>
+
+Город: {{ address$ | async }}
